@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    # 针对链接mysql时报出的警告信息进行优化
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&useSSL=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
